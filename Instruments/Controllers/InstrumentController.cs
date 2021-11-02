@@ -60,5 +60,14 @@ namespace Instruments.Controllers
 			return Instrument.Delete(id);
 		}
 
+		//
+		// Update (PUT)
+		//
+		[HttpPut]
+		public Instrument Update(Instrument inst)
+		{
+			return Instrument.Update(inst);
+		}
+
 	}
 }

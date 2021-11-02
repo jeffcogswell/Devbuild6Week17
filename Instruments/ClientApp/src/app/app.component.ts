@@ -52,6 +52,14 @@ export class AppComponent {
 		);
 	}
 
+	doUpdate(inst: Instrument) {
+		this.http.put<Instrument>('/api/instrument', inst).subscribe(
+			(result) => {
+				//this.getList();
+			}
+		)
+	}
+
 	test() {
 		alert('Replacing the list with an empty one');
 		this.myInsts = [];

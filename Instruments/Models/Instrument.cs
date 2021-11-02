@@ -35,7 +35,7 @@ namespace Instruments.Models
 		}
 
 		//
-		// Crud
+		// Crud: Create
 		//
 		public static Instrument Add(Instrument inst)
 		{
@@ -45,7 +45,7 @@ namespace Instruments.Models
 		}
 
 		//
-		// cruD
+		// cruD: Delete
 		//
 		public static bool Delete(int id)
 		{
@@ -54,5 +54,13 @@ namespace Instruments.Models
 			return DB.Delete(inst);
 		}
 
+		//
+		// crUd: Update
+		//
+		public static Instrument Update(Instrument inst)
+		{
+			DB.Update(inst);
+			return inst;
+		}
 	}
 }
