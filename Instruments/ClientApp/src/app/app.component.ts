@@ -25,6 +25,10 @@ export class AppComponent {
 		//console.log(this.myInsts);
 		this.http.post<Instrument>('/api/instrument', inst).subscribe(
 			(result) => {
+				// Work with the variables only. The textboxes
+				// will automatically reflect the value of the variable
+				this.newKind = '';
+				this.newColor = '';
 				this.getList();
 			}
 		);
