@@ -38,6 +38,7 @@ export class OneInstComponent {
 	}
 
 	saveChanges() {
+		// After much work we decided this was the best approach.
 		this.theinst.kind = this.editKind;
 		this.theinst.color = this.editColor;
 		this.inEditMode = false;
