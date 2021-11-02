@@ -38,13 +38,6 @@ export class OneInstComponent {
 	}
 
 	saveChanges() {
-		/*let newobj: Instrument = {
-			id: this.theinst.id,
-			kind: this.editKind,
-			color: this.editColor
-		};
-		this.updateevent.emit(newobj);
-		*/
 		this.theinst.kind = this.editKind;
 		this.theinst.color = this.editColor;
 		this.inEditMode = false;
