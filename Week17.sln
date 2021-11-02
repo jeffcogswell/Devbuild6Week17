@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instruments", "Instruments\Instruments.csproj", "{EFADBA0F-4F6E-4ACC-A605-67E389CABBAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instruments", "Instruments\Instruments.csproj", "{EFADBA0F-4F6E-4ACC-A605-67E389CABBAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitialWeather", "InitialWeather\InitialWeather.csproj", "{3B96E298-BD53-40C5-985D-10444A2271AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InitialWeather", "InitialWeather\InitialWeather.csproj", "{3B96E298-BD53-40C5-985D-10444A2271AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoutingDemo", "RoutingDemo\RoutingDemo.csproj", "{4EE6559F-9042-42D6-8CB6-DF42E4C078E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{3B96E298-BD53-40C5-985D-10444A2271AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B96E298-BD53-40C5-985D-10444A2271AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B96E298-BD53-40C5-985D-10444A2271AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE6559F-9042-42D6-8CB6-DF42E4C078E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE6559F-9042-42D6-8CB6-DF42E4C078E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE6559F-9042-42D6-8CB6-DF42E4C078E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE6559F-9042-42D6-8CB6-DF42E4C078E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MySql.Data.MySqlClient;
 
-namespace Instruments
+namespace RoutingDemo
 {
 	public class Startup
 	{
@@ -21,10 +20,6 @@ namespace Instruments
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
-
-			string connstring = Configuration.GetConnectionString("db");
-			Models.Instrument.DB = new MySqlConnection(connstring);
-
 			services.AddControllersWithViews();
 			// In production, the Angular files will be served from this directory
 			services.AddSpaStaticFiles(configuration =>
@@ -72,10 +67,7 @@ namespace Instruments
 
 				if (env.IsDevelopment())
 				{
-					//spa.UseAngularCliServer(npmScript: "start");
-					// Replace the above with the line below. Then in a bash shell cd to ClientApp and run: ng serve
-					// Then start the app. (Note: To see the difference, replace 127.0.0.1 with localhost and it will be much slower)
-					spa.UseProxyToSpaDevelopmentServer("http://127.0.0.1:4200");
+					spa.UseAngularCliServer(npmScript: "start");
 				}
 			});
 		}
